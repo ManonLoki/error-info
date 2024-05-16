@@ -1,0 +1,21 @@
+[package]
+name = "error-code"
+version = "0.1.0"
+edition = "2021"
+license = "MIT"
+[dependencies]
+
+base64 = "0.22.1"
+error-code-derive = { workspace = true }
+
+
+[dev-dependencies]
+error-code.workspace = true
+anyhow.workspace = true
+axum = { version = "0.7.5", features = ["http2", "query", "tracing"] }
+backtrace = "0.3.71"
+http.workspace = true
+tokio = { version = "1.37.0", features = ["rt", "rt-multi-thread", "macros"] }
+tracing = "0.1.40"
+tracing-subscriber = { version = "0.3.18"}
+thiserror.workspace = true
