@@ -1,0 +1,11 @@
+[workspace]
+members = ["error-code", "error-code-derive"]
+
+resolver = "2"
+
+[workspace.dependencies]
+anyhow = { version = "1.0.83" }
+error-code = { path = "./error-code" }
+error-code-derive = { path = "./error-code-derive" }
+http = { version = "1.1.0" }
+thiserror = { version = "1.0.60" }
